@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get Day of the Week</title>
+	</head>
+	<body>
+        <h1>Click the button to display todays day of the week.</h1>
+
+        <button onclick="demo()">Click here</button>
+        <p id="demo"></p>
+        <script type="text/javascript">
+
+    function demo(){
+        var  day;
+    
+    switch (new Date().getDay()) {
+        case 1: 
+            day = "Monday";
+            document.getElementById("demo").innerHTML = "Oh God, It is " + day+ "  already?  :(";
+            break;
+        case 2:
+            day = "Tuesday";
+            document.getElementById("demo").innerHTML = "Ok, Ok I get it. It is " + day +" alright! :|";
+            break;
+        case 3:
+            day = "Wednesday";
+            document.getElementById("demo").innerHTML = "Yea Baby, It is Humpday!!!" + day+"! I am get ready for the weekend!!! :)";
+            break;
+        case 4:
+            day = "Thursday";
+            document.getElementById("demo").innerHTML = "One more day to go, It is " + day +"  baby !!!!!! :)";
+            break;
+        case 5:
+            day = "Friday";
+            document.getElementById("demo").innerHTML = "It is TGIF, It is " + day+" , Horay!!!!";
+            break;
+        case 6:
+            day = "Saturday";
+            document.getElementById("demo").innerHTML = "Time to Party Dudes and Dudettes, It is " + day;
+            break;
+        case 0:
+            day = "Sunday";
+            document.getElementById("demo").innerHTML = "This is the day that the Lord has made to worship him, It is " + day;
+           break;
+
+            }
+        }
+        </script>
+    </body>
+</html>
+
+
+
+
+
